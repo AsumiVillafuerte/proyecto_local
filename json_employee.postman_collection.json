@@ -1,0 +1,204 @@
+{
+	"info": {
+		"_postman_id": "a9d35354-178f-4394-b171-cf1ef1d5e33c",
+		"name": "json_employee",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "43465741",
+		"_collection_link": "https://marcoinfante.postman.co/workspace/SQL_Server~47a5e022-5f47-4c13-9e97-50e2fa9fbdd7/collection/43465741-a9d35354-178f-4394-b171-cf1ef1d5e33c?action=share&source=collection_link&creator=43465741"
+	},
+	"item": [
+		{
+			"name": "employee",
+			"item": [
+				{
+					"name": "Get All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://organic-fishstick-69rxw5qpj56p35www-8085.app.github.dev/v1/api/employee",
+							"protocol": "https",
+							"host": [
+								"organic-fishstick-69rxw5qpj56p35www-8085",
+								"app",
+								"github",
+								"dev"
+							],
+							"path": [
+								"v1",
+								"api",
+								"employee"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All ByEstado",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://organic-fishstick-69rxw5qpj56p35www-8085.app.github.dev/v1/api/employee/estado/I",
+							"protocol": "https",
+							"host": [
+								"organic-fishstick-69rxw5qpj56p35www-8085",
+								"app",
+								"github",
+								"dev"
+							],
+							"path": [
+								"v1",
+								"api",
+								"employee",
+								"estado",
+								"I"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Byid",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://organic-fishstick-69rxw5qpj56p35www-8085.app.github.dev/v1/api/employee/1",
+							"protocol": "https",
+							"host": [
+								"organic-fishstick-69rxw5qpj56p35www-8085",
+								"app",
+								"github",
+								"dev"
+							],
+							"path": [
+								"v1",
+								"api",
+								"employee",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Byid",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://organic-fishstick-69rxw5qpj56p35www-8085.app.github.dev/v1/api/employee/delete/3",
+							"protocol": "https",
+							"host": [
+								"organic-fishstick-69rxw5qpj56p35www-8085",
+								"app",
+								"github",
+								"dev"
+							],
+							"path": [
+								"v1",
+								"api",
+								"employee",
+								"delete",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Restore Byid",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "https://organic-fishstick-69rxw5qpj56p35www-8085.app.github.dev/v1/api/employee/restore/1",
+							"protocol": "https",
+							"host": [
+								"organic-fishstick-69rxw5qpj56p35www-8085",
+								"app",
+								"github",
+								"dev"
+							],
+							"path": [
+								"v1",
+								"api",
+								"employee",
+								"restore",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"names\": \"Marco\",\r\n        \"surnames\": \"Infante\",\r\n        \"phone\": \"913456345\",\r\n        \"document_type\": \"DNI\",\r\n        \"document_number\": 72343454,\r\n        \"shift\": \"Tarde\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://organic-fishstick-69rxw5qpj56p35www-8085.app.github.dev/v1/api/employee/save",
+							"protocol": "https",
+							"host": [
+								"organic-fishstick-69rxw5qpj56p35www-8085",
+								"app",
+								"github",
+								"dev"
+							],
+							"path": [
+								"v1",
+								"api",
+								"employee",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"names\": \"Marco\",\r\n        \"surnames\": \"Infante\",\r\n        \"phone\": \"913456345\",\r\n        \"document_type\": \"DNI\",\r\n        \"document_number\": 72343454,\r\n        \"shift\": \"Tarde\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://organic-fishstick-69rxw5qpj56p35www-8085.app.github.dev/v1/api/employee/update",
+							"protocol": "https",
+							"host": [
+								"organic-fishstick-69rxw5qpj56p35www-8085",
+								"app",
+								"github",
+								"dev"
+							],
+							"path": [
+								"v1",
+								"api",
+								"employee",
+								"update"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
