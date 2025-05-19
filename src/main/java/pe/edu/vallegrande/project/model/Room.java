@@ -42,7 +42,9 @@ public class Room{
     @Column(name = "registrationd_date", insertable = false, updatable = false)
     private LocalDateTime registrationd_date;
 
-    @Column(name = "state")
-    private String state;
+    @Column(name = "modification_date")
+    private LocalDateTime modification_date;
 
+    @Column(name = "state")
+    private String state = "A";
 }
